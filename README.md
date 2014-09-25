@@ -1,4 +1,4 @@
-Video Tag
+# Video Tag
 
 **Easy responsive videos for Jekyll.**
 
