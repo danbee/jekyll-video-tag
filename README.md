@@ -1,4 +1,4 @@
-# Video Tag
+# Jekyll Video Tag
 
 **Easy responsive videos for Jekyll.**
 
@@ -6,7 +6,7 @@ Jekyll Video Tag is a liquid tag that adds responsive videos to your [Jekyll](ht
 
 ### Usage
 
-Add the CSS or Sass file to your site.
+Place the `video_tag.rb` file in your `_plugins` directory and add the CSS or Sass file to your site.
 
 ```liquid
 {% video {embed-url} width={width} height={height} %}
