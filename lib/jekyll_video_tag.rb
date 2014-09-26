@@ -1,18 +1,5 @@
-# Plugin for rendering responsive video in Jekyll
-# Written by: Dan Barber
-# Version: 0.0.2
-# ===============================================
-# Usage:
-# ------
-# {% video {embed-url} width={width} height={height} %}
-#
-# The embed URL is the one that is referenced by the iframe in the video embed code.
-#
-# Example:
-# {% video //www.youtube.com/embed/7eP4pw03PCg width=560 height=315 %}
-
-module Jekyll
-  class VideoTag < Liquid::Tag
+module JekyllVideoTag
+  class Tag < Liquid::Tag
     def initialize(tag_name, input, tokens)
       super
       @url = input.slice!(/[^ ]+/)
@@ -43,4 +30,4 @@ module Jekyll
   end
 end
 
-Liquid::Template.register_tag('video', Jekyll::VideoTag)
+Liquid::Template.register_tag('video', JekyllVideoTag::Tag)
