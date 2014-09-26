@@ -1,6 +1,6 @@
 # Plugin for rendering responsive video in Jekyll
 # Written by: Dan Barber
-# Version: 0.0.1
+# Version: 0.0.2
 # ===============================================
 # Usage:
 # ------
@@ -26,7 +26,7 @@ module Jekyll
     private
 
     def video_iframe(url)
-      %(<iframe src="#{url}" frameborder="0" allowfullscreen />)
+      %(<iframe src="#{url}" frameborder="0" allowfullscreen></iframe>)
     end
 
     def container_style(options)
