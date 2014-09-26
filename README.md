@@ -35,7 +35,7 @@ Place the following snippet somewhere in your CSS:
 
 ## Usage
 
-``` liquid
+```
 {% video {embed-url} width={width} height={height} %}
 ```
 
@@ -43,7 +43,7 @@ The embed URL is the one that is referenced by the iframe in the video embed cod
 
 ### Example:
 
-``` liquid
+```
 {% video //www.youtube.com/embed/7eP4pw03PCg width=560 height=315 %}
 ```
 
