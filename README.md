@@ -6,7 +6,7 @@ Jekyll Video Tag is a liquid tag that adds responsive videos to your [Jekyll](ht
 
 Add this line to your application's Gemfile:
 
-    gem 'jekyll_video_tag'
+    gem 'jekyll-video-tag'
 
 And then execute:
 
@@ -14,7 +14,24 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install jekyll_video_tag
+    $ gem install jekyll-video-tag
+
+Add the gem to your Jekyll config:
+
+    gems: ['jekyll_video_tag']
+
+Place the following snippet somewhere in your CSS:
+
+``` css
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0; }
+  .video-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%; }
+```
 
 ## Usage
 
